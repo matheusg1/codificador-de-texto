@@ -1,4 +1,4 @@
-# codificador-de-texto
+# Codificador de texto
 Projeto Codificador - Challenge Alura - Oracle ONE
 Primeiro Challenge Alura
 
