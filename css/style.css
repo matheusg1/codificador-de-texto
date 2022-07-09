@@ -2,7 +2,8 @@
 html, body{
     background-color: #9C9990;
     cursor: default;
-
+    display: flex;
+    flex-direction: column;
 }
 .container{
     display: flex;
@@ -16,7 +17,7 @@ html, body{
     justify-content: space-evenly;
 }
 .boxBg{
-    padding:50px;
+    padding:40px;
     border-radius: 10px;
     justify-content: space-evenly;
     flex-direction: column;
@@ -35,11 +36,14 @@ html, body{
     font-weight: 300;
     color: #4B3B47;
     text-transform:lowercase;
+    margin-bottom:20px;
 }
 .boxBotoes{
     display: flex;
+    justify-content: space-around;
 }
 .boxBotoes button{
+    width: 120px;
     margin: 0 14px;
 }
 .boxCodDecod{
@@ -76,7 +80,7 @@ button{
     font-size:20px;
     color: black;
     height: 60px;
-    width: 180px;
+    width: 140px;
     border-radius: 10px;
     border: 0.5px #4B3B47;
     border-style: solid;
@@ -91,8 +95,8 @@ button:hover{
 }
 footer{
     background-color: #4B3B47;
-    width: 100%;
     height: 163px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -124,4 +128,27 @@ svg:hover{
 .textoRodape:hover{
     color: #F6F4F5;
     transition: 0.3s;
+}
+@media(max-width: 576px){
+    
+    .boxBg{
+        padding:20px 0;
+        width: auto;
+        border-radius: 0;
+        margin: 25px 0;
+        border: none;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 60px;
+    }
+    button{
+        border: solid 2px #4B3B47;
+        font-size:24px;
+        width: 200px;
+    }
+    .boxBotoes button{
+        width: 160px;
+        margin: 2px;
+    }
 }
