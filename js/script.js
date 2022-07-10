@@ -17,7 +17,6 @@ function decodificaLetras(frase){
 btnCodificar.addEventListener("click", function(event){
     if (textoEntrada.value){
         textoEntrada.value = codificaLetras(textoEntrada.value)
-        console.log(textoEntrada.value)
         textoResultado.value = textoEntrada.value
         textoEntrada.value = ""
     }
@@ -26,7 +25,6 @@ btnCodificar.addEventListener("click", function(event){
 btnDecodificar.addEventListener("click", function(event){
     if (textoEntrada.value){
         textoEntrada.value = decodificaLetras(textoEntrada.value)
-        console.log(textoEntrada.value)
         textoResultado.value = textoEntrada.value
         textoEntrada.value = ""
         }
